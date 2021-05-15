@@ -1,7 +1,8 @@
 <div class="home">
+  <h1>Brasileirão 2020</h1>
   <div class="home-teams">
     <div *ngFor="let teamVenue of teamVenues">
-      <app-team [teamVenue]="teamVenue"></app-team>
+      <app-team [teamVenue]="teamVenue" (teamClicked)="showTeamDetails(teamVenue)"></app-team>
     </div>
   </div>
 </div>

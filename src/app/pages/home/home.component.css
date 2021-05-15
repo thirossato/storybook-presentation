@@ -1,10 +1,18 @@
-.home{
+.home {
   padding: 30px;
-
 }
 
-.home-teams{
+.home h1 {
+  background-color: #fff;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  text-align: center;
+}
+
+.home-teams {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+

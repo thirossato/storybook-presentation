@@ -1,5 +1,5 @@
+import { TeamModule } from './../../shared/components/team/team.module';
 import { TeamService } from './../../shared/services/team.service';
-import { TeamComponent } from './../components/team/team.component';
 import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -7,10 +7,11 @@ import { MatCardModule } from '@angular/material/card'
 
 
 @NgModule({
-  declarations: [HomeComponent, TeamComponent],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
-    MatCardModule
+    MatCardModule,
+    TeamModule
   ],
   providers:[TeamService]
 })

@@ -1,0 +1,16 @@
+<mat-card class="team-card" (click)="onTeamClicked(teamVenue)">
+  <mat-card-header>
+    <div mat-card-avatar class="header-image" [style.background]="'url(' + teamVenue.team.logo + ')'"></div>
+    <mat-card-title>{{teamVenue.team.name}}</mat-card-title>
+    <mat-card-subtitle>{{teamVenue.venue.city}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content *ngIf="showContent">
+    <div class="team-venue">
+      <img [src]="teamVenue.venue.image" alt="imagem do estadio">
+      <span>{{teamVenue.venue.name}} </span>
+      <p><span>Cidade: </span>{{teamVenue.venue.city}}</p>
+      <p><span>Endereço: </span>{{teamVenue.venue.address}}</p>
+      <p><span>Capacidade: </span>{{teamVenue.venue.capacity}}</p>
+    </div>
+  </mat-card-content>
+</mat-card>

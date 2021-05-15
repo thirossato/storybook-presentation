@@ -1,0 +1,40 @@
+<div class="team-details">
+  <app-team [teamVenue]="teamVenue" (showContent)=true></app-team>
+  <div class="team-standings">
+    <h1>Brasileirão 2020</h1>
+    <p><span>Qualificação:</span> {{ teamStandings.rank }}</p>
+    <p><span>Pontos:</span> {{ teamStandings.points }}</p>
+    <p><span>Saldo de gols:</span> {{ teamStandings.goalsDiff }}</p>
+    <div>
+      <span>Ultimos 5 jogos:</span>
+      <div *ngFor="let result of teamStandings.form.split('')">
+        <mat-icon
+          *ngIf="result == 'W'"
+          aria-hidden="false"
+          aria-label="sentiment-satisfied"
+          >sentiment_satisfied</mat-icon
+        >
+        <mat-icon
+          *ngIf="result == 'L'"
+          aria-hidden="false"
+          aria-label="sentiment-dissatisfied"
+          >sentiment_dissatisfied</mat-icon
+        >
+        <mat-icon
+          *ngIf="result == 'D'"
+          aria-hidden="false"
+          aria-label="sentiment-neutral"
+          >sentiment_neutral</mat-icon
+        >
+      </div>
+    </div>
+    <p><span>status:</span> {{ teamStandings.status }}</p>
+    <h2>Jogos</h2>
+    <p><span>Total:</span> {{ teamStandings.all.played }}</p>
+    <p><span>Ganhou:</span> {{ teamStandings.all.win }}</p>
+    <p><span>Empatou:</span> {{ teamStandings.all.draw }}</p>
+    <p><span>Perdeu:</span> {{ teamStandings.all.lose }}</p>
+    <p><span>Gols feitos:</span> {{ teamStandings.all.goals.for }}</p>
+    <p><span>Gols sofridos:</span> {{ teamStandings.all.goals.against }}</p>
+  </div>
+</div>

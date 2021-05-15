@@ -15,4 +15,8 @@ export class HomeComponent implements OnInit {
     this.teamService.listTeams().subscribe(api => { this.teamVenues = api.response }, error => console.error(error));
   }
 
+  showTeamDetails(team: TeamVenueInterface){
+    console.log(team)
+  }
+
 }
