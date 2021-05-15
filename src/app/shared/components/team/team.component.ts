@@ -11,14 +11,12 @@ import { TeamVenueInterface } from '../../models/team.interface';
 export class TeamComponent implements OnInit {
   @Input() teamVenue: TeamVenueInterface;
   @Input() showContent: boolean = false;
-  @Output() teamClicked: EventEmitter<TeamVenueInterface> = new EventEmitter<TeamVenueInterface>();
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log('show content', this.showContent);
+
   }
 
-  onTeamClicked(teamVenue: TeamVenueInterface){
-    this.teamClicked.emit(teamVenue);
-  }
 }
