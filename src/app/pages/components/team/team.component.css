@@ -1,0 +1,8 @@
+.team-card{
+  margin: 25px 10px;
+  width: 300px;
+  cursor: pointer;
+}
+.header-image{
+  background-size: cover !important;
+}

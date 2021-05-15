@@ -1,0 +1,10 @@
+.home{
+  padding: 30px;
+
+}
+
+.home-teams{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

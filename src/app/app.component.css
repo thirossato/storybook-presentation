@@ -1,0 +1,14 @@
+.container {
+  display: table;
+  width: 100%; height: 100%;
+  background-image: url('../assets/images/gramado.jpg');
+}
+.content {
+  display: table-row;
+  height: 100%;
+  padding: 10px 20px;
+}
+.content-body {
+  display: table-cell;
+  padding: 20px;
+}
