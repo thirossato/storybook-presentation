@@ -1,0 +1,29 @@
+
+.last-five-games{
+  display: flex;
+  flex-direction: row;
+}
+
+.success {
+  color: green;
+}
+
+.fail {
+  color: red;
+}
+
+.neutral {
+  color: gray;
+}
+
+.league-standings, .games-standings {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+}

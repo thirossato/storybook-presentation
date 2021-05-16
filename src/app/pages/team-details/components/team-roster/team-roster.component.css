@@ -1,0 +1,14 @@
+.team-roster{
+  margin: 5px;
+  width: 200px;
+}
+.player-details{
+  width: fit-content;
+}
+.header-image{
+  background-size: cover !important;
+}
+
+mat-card{
+  max-height: 40px !important;
+}
