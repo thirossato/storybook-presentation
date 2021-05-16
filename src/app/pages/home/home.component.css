@@ -16,3 +16,8 @@
   justify-content: space-between;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+

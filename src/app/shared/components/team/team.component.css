@@ -8,3 +8,6 @@
 .header-image{
   background-size: cover !important;
 }
+.team-venue-image {
+  max-height: 500px;
+}

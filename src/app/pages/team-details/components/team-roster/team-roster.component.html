@@ -3,7 +3,11 @@
     <mat-card-header>
       <div mat-card-avatar class="header-image" [style.background]="'url(' + player.player.photo + ')'"></div>
       <mat-card-title>{{player.player.firstname}}</mat-card-title>
-
+      <mat-card-subtitle>
+        <mat-icon *ngIf="player.player.injured">healing</mat-icon>
+      </mat-card-subtitle>
     </mat-card-header>
+    <mat-card-content>
+    </mat-card-content>
   </mat-card>
 </div>

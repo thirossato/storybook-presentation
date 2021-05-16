@@ -1,0 +1,2307 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "PlayerInterface",
+            "id": "interface-PlayerInterface-e96458f735d9edb5f7cbd8e4802967d1",
+            "file": "src/app/shared/models/player.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface PlayerInterface {\r\n  player:{\r\n    id: number;\r\n    name: string;\r\n    firstname: string;\r\n    lastname: string;\r\n    age: number;\r\n    nationality: string;\r\n    height: string;\r\n    weight: string;\r\n    injured: boolean;\r\n    photo: string;\r\n  }\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "player",
+                    "type": "literal type",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "StandingResultsInterface",
+            "id": "interface-StandingResultsInterface-5b88564c83f6780a9005ba0d3fe242bf",
+            "file": "src/app/shared/models/standings.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface StanginsResponseInterface{\r\n  response: Array<StandingsLeagueInterface>;\r\n}\r\n\r\nexport interface StandingsLeagueInterface{\r\n  league: { standings: StandingsInterface }\r\n}\r\n\r\nexport interface StandingsInterface{\r\n  rank: number;\r\n  points:number;\r\n  goalsDiff: number;\r\n  form: string;\r\n  status: string;\r\n  all: StandingResultsInterface;\r\n}\r\n\r\nexport interface StandingResultsInterface{\r\n  played:number;\r\n  win:number;\r\n  lose:number;\r\n  draw:number;\r\n  goals: {\r\n    for: number;\r\n    against:number\r\n  }\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "draw",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "goals",
+                    "type": "literal type",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "lose",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "played",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "win",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "StandingsInterface",
+            "id": "interface-StandingsInterface-5b88564c83f6780a9005ba0d3fe242bf",
+            "file": "src/app/shared/models/standings.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface StanginsResponseInterface{\r\n  response: Array<StandingsLeagueInterface>;\r\n}\r\n\r\nexport interface StandingsLeagueInterface{\r\n  league: { standings: StandingsInterface }\r\n}\r\n\r\nexport interface StandingsInterface{\r\n  rank: number;\r\n  points:number;\r\n  goalsDiff: number;\r\n  form: string;\r\n  status: string;\r\n  all: StandingResultsInterface;\r\n}\r\n\r\nexport interface StandingResultsInterface{\r\n  played:number;\r\n  win:number;\r\n  lose:number;\r\n  draw:number;\r\n  goals: {\r\n    for: number;\r\n    against:number\r\n  }\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "all",
+                    "type": "StandingResultsInterface",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "form",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "goalsDiff",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "points",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "rank",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "status",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "StandingsLeagueInterface",
+            "id": "interface-StandingsLeagueInterface-5b88564c83f6780a9005ba0d3fe242bf",
+            "file": "src/app/shared/models/standings.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface StanginsResponseInterface{\r\n  response: Array<StandingsLeagueInterface>;\r\n}\r\n\r\nexport interface StandingsLeagueInterface{\r\n  league: { standings: StandingsInterface }\r\n}\r\n\r\nexport interface StandingsInterface{\r\n  rank: number;\r\n  points:number;\r\n  goalsDiff: number;\r\n  form: string;\r\n  status: string;\r\n  all: StandingResultsInterface;\r\n}\r\n\r\nexport interface StandingResultsInterface{\r\n  played:number;\r\n  win:number;\r\n  lose:number;\r\n  draw:number;\r\n  goals: {\r\n    for: number;\r\n    against:number\r\n  }\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "league",
+                    "type": "literal type",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "StanginsResponseInterface",
+            "id": "interface-StanginsResponseInterface-5b88564c83f6780a9005ba0d3fe242bf",
+            "file": "src/app/shared/models/standings.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface StanginsResponseInterface{\r\n  response: Array<StandingsLeagueInterface>;\r\n}\r\n\r\nexport interface StandingsLeagueInterface{\r\n  league: { standings: StandingsInterface }\r\n}\r\n\r\nexport interface StandingsInterface{\r\n  rank: number;\r\n  points:number;\r\n  goalsDiff: number;\r\n  form: string;\r\n  status: string;\r\n  all: StandingResultsInterface;\r\n}\r\n\r\nexport interface StandingResultsInterface{\r\n  played:number;\r\n  win:number;\r\n  lose:number;\r\n  draw:number;\r\n  goals: {\r\n    for: number;\r\n    against:number\r\n  }\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "response",
+                    "type": "Array<StandingsLeagueInterface>",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "TeamInterface",
+            "id": "interface-TeamInterface-24b8287c3f79332e44ba4aa07c929763",
+            "file": "src/app/shared/models/team.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface TeamResponseInterface {\r\n  response: Array<TeamVenueInterface>;\r\n}\r\n\r\nexport interface TeamVenueInterface {\r\n  team: TeamInterface;\r\n  venue: VenueInterface;\r\n}\r\n\r\nexport interface TeamInterface {\r\n  id: number;\r\n  name: string;\r\n  country: string;\r\n  founded: number;\r\n  national: boolean;\r\n  logo: string;\r\n}\r\n\r\nexport interface VenueInterface {\r\n  id: number;\r\n  name: string;\r\n  address: string;\r\n  city: string;\r\n  capacity: number;\r\n  surface: string;\r\n  image: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "country",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "founded",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "id",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "logo",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "national",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "TeamResponseInterface",
+            "id": "interface-TeamResponseInterface-24b8287c3f79332e44ba4aa07c929763",
+            "file": "src/app/shared/models/team.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface TeamResponseInterface {\r\n  response: Array<TeamVenueInterface>;\r\n}\r\n\r\nexport interface TeamVenueInterface {\r\n  team: TeamInterface;\r\n  venue: VenueInterface;\r\n}\r\n\r\nexport interface TeamInterface {\r\n  id: number;\r\n  name: string;\r\n  country: string;\r\n  founded: number;\r\n  national: boolean;\r\n  logo: string;\r\n}\r\n\r\nexport interface VenueInterface {\r\n  id: number;\r\n  name: string;\r\n  address: string;\r\n  city: string;\r\n  capacity: number;\r\n  surface: string;\r\n  image: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "response",
+                    "type": "Array<TeamVenueInterface>",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "TeamRosterInterface",
+            "id": "interface-TeamRosterInterface-033cb394686e22dc82cad22af57af4f7",
+            "file": "src/app/shared/models/team-roster.interface.ts",
+            "type": "interface",
+            "sourceCode": "import { PlayerInterface } from \"./player.interface\";\r\n\r\nexport interface TeamRosterInterface {\r\n  response: Array<PlayerInterface>\r\n}\r\n\r\n",
+            "properties": [
+                {
+                    "name": "response",
+                    "type": "Array<PlayerInterface>",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "TeamVenueInterface",
+            "id": "interface-TeamVenueInterface-24b8287c3f79332e44ba4aa07c929763",
+            "file": "src/app/shared/models/team.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface TeamResponseInterface {\r\n  response: Array<TeamVenueInterface>;\r\n}\r\n\r\nexport interface TeamVenueInterface {\r\n  team: TeamInterface;\r\n  venue: VenueInterface;\r\n}\r\n\r\nexport interface TeamInterface {\r\n  id: number;\r\n  name: string;\r\n  country: string;\r\n  founded: number;\r\n  national: boolean;\r\n  logo: string;\r\n}\r\n\r\nexport interface VenueInterface {\r\n  id: number;\r\n  name: string;\r\n  address: string;\r\n  city: string;\r\n  capacity: number;\r\n  surface: string;\r\n  image: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "team",
+                    "type": "TeamInterface",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "venue",
+                    "type": "VenueInterface",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "VenueInterface",
+            "id": "interface-VenueInterface-24b8287c3f79332e44ba4aa07c929763",
+            "file": "src/app/shared/models/team.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface TeamResponseInterface {\r\n  response: Array<TeamVenueInterface>;\r\n}\r\n\r\nexport interface TeamVenueInterface {\r\n  team: TeamInterface;\r\n  venue: VenueInterface;\r\n}\r\n\r\nexport interface TeamInterface {\r\n  id: number;\r\n  name: string;\r\n  country: string;\r\n  founded: number;\r\n  national: boolean;\r\n  logo: string;\r\n}\r\n\r\nexport interface VenueInterface {\r\n  id: number;\r\n  name: string;\r\n  address: string;\r\n  city: string;\r\n  capacity: number;\r\n  surface: string;\r\n  image: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "address",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "capacity",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "id",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "image",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "surface",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "TeamService",
+            "id": "injectable-TeamService-ad564d08b6e8d962ad54bf85777c6718",
+            "file": "src/app/shared/services/team.service.ts",
+            "properties": [
+                {
+                    "name": "httpOptions",
+                    "defaultValue": "{\n    headers: new HttpHeaders({\n      'Content-Type': 'application/json',\n      \"x-rapidapi-key\": \"553659e617mshb77bc2079c26c88p189f1cjsn00b3b2b5cfeb\",\n      \"x-rapidapi-host\": \"api-football-v1.p.rapidapi.com\",\n      \"async\": 'true',\n      \"crossDomain\": 'true',\n    })\n  }",
+                    "type": "object",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "modifierKind": [
+                        112
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getTeamRoster",
+                    "args": [
+                        {
+                            "name": "teamId",
+                            "type": "number"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<TeamRosterInterface>",
+                    "typeParameters": [],
+                    "line": 35,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "teamId",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getTeamStandings",
+                    "args": [
+                        {
+                            "name": "teamId",
+                            "type": "number"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<StanginsResponseInterface>",
+                    "typeParameters": [],
+                    "line": 30,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "teamId",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "listTeams",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<TeamResponseInterface>",
+                    "typeParameters": [],
+                    "line": 25,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "description": "",
+            "sourceCode": "import { TeamRosterInterface } from './../models/team-roster.interface';\nimport { Injectable } from '@angular/core';\nimport { HttpClient, HttpHeaders } from '@angular/common/http'\nimport { Observable } from 'rxjs';\n\nimport { TeamResponseInterface } from './../models/team.interface';\nimport { StanginsResponseInterface } from '../models/standings.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class TeamService {\n  private httpOptions = {\n    headers: new HttpHeaders({\n      'Content-Type': 'application/json',\n      \"x-rapidapi-key\": \"553659e617mshb77bc2079c26c88p189f1cjsn00b3b2b5cfeb\",\n      \"x-rapidapi-host\": \"api-football-v1.p.rapidapi.com\",\n      \"async\": 'true',\n      \"crossDomain\": 'true',\n    })\n  };\n\n  constructor(private httpClient: HttpClient) { }\n\n  public listTeams(): Observable<TeamResponseInterface>{\n    const url = \"https://api-football-v1.p.rapidapi.com/v3/teams?league=71&season=2020\"\n    return this.httpClient.get(url, this.httpOptions) as Observable<TeamResponseInterface>;\n  }\n\n  public getTeamStandings(teamId: number): Observable<StanginsResponseInterface>{\n    const url = `https://api-football-v1.p.rapidapi.com/v3/standings?season=2020&league=71&team=${teamId}`\n    return this.httpClient.get(url, this.httpOptions) as Observable<StanginsResponseInterface>;\n  }\n\n  public getTeamRoster(teamId: number): Observable<TeamRosterInterface>{\n    const url = `https://api-football-v1.p.rapidapi.com/v3/players?season=2020&league=71&team=${teamId}`\n    return this.httpClient.get(url, this.httpOptions) as Observable<TeamRosterInterface>;\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "httpClient",
+                        "type": "HttpClient"
+                    }
+                ],
+                "line": 21,
+                "jsdoctags": [
+                    {
+                        "name": "httpClient",
+                        "type": "HttpClient",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        }
+    ],
+    "classes": [
+        {
+            "name": "AppPage",
+            "id": "class-AppPage-ee2067dfb1c303f41003aea7d82d51e0",
+            "file": "e2e/src/app.po.ts",
+            "type": "class",
+            "sourceCode": "import { browser, by, element } from 'protractor';\n\nexport class AppPage {\n  async navigateTo(): Promise<unknown> {\n    return browser.get(browser.baseUrl);\n  }\n\n  async getTitleText(): Promise<string> {\n    return element(by.css('app-root .content span')).getText();\n  }\n}\n",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "getTitleText",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<string>",
+                    "typeParameters": [],
+                    "line": 8,
+                    "modifierKind": [
+                        120
+                    ]
+                },
+                {
+                    "name": "navigateTo",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<unknown>",
+                    "typeParameters": [],
+                    "line": 4,
+                    "modifierKind": [
+                        120
+                    ]
+                }
+            ],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-be39b5fa19963caed8cb620524f0e46b",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'storybook-presentation'",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'storybook-presentation';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".container {\r\n  display: table;\r\n  width: 100%; height: 100%;\r\n  background-image: url('../assets/images/gramado.jpg');\r\n}\r\n.content {\r\n  display: table-row;\r\n  height: 100%;\r\n  padding: 10px 20px;\r\n}\r\n.content-body {\r\n  display: table-cell;\r\n  padding: 20px;\r\n}\r\n",
+                    "styleUrl": "./app.component.css"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<!-- <div id=\"main-wrapper\">\n  <div id=\"page-content\">\n    <app-header></app-header>\n    <router-outlet></router-outlet>\n  </div>\n</div> -->\n<div class=\"container\">\n  <header class=\"header\">\n    <app-header></app-header>\n  </header>\n  <section class=\"content\">\n    <div class=\"content-body\">\n      <router-outlet></router-outlet>\n    </div>\n  </section>\n  <footer class=\"footer\">\n    <p>This is the footer.</p>\n  </footer>\n</div>\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-642c6c4e474cd5a0ac760dfda26b2fc9",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string"
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\""
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-246e2a69dc126a3bd76c6328dd3b93e2",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "line": 53,
+                    "type": "unknown"
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 62,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 56,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 59,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-da841f00fbcbadf38da830aa5a2a4129-1",
+            "file": "src/app/shared/components/header/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-header",
+            "styleUrls": [
+                "./header.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./header.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.css']\n})\nexport class HeaderComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./header.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "HeaderComponent-1",
+            "templateData": "<mat-toolbar>\n  <mat-icon aria-hidden=\"false\" aria-label=\"soccer-icon\">sports_soccer</mat-icon>\n  <span>ISoccer</span>\n</mat-toolbar>\n"
+        },
+        {
+            "name": "HomeComponent",
+            "id": "component-HomeComponent-ff33bd04cf11fd54f7b40d79b1f02651",
+            "file": "src/app/pages/home/home.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home",
+            "styleUrls": [
+                "./home.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./home.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "teamVenues",
+                    "type": "Array<TeamVenueInterface>",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { TeamService } from './../../shared/services/team.service';\nimport { Component, OnInit } from '@angular/core';\nimport { TeamVenueInterface } from 'src/app/shared/models/team.interface';\n\n@Component({\n  selector: 'app-home',\n  templateUrl: './home.component.html',\n  styleUrls: ['./home.component.css']\n})\nexport class HomeComponent implements OnInit {\n  public teamVenues: Array<TeamVenueInterface>;\n  constructor(private teamService: TeamService) { }\n\n  ngOnInit(): void {\n    this.teamService.listTeams().subscribe(api => { this.teamVenues = api.response }, error => console.error(error));\n  }\n\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".home {\r\n  padding: 30px;\r\n}\r\n\r\n.home h1 {\r\n  background-color: #fff;\r\n  font-weight: bold;\r\n  font-size: larger;\r\n  color: black;\r\n  text-align: center;\r\n}\r\n\r\n.home-teams {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n}\r\n\r\na:link, a:visited {\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n\r\n",
+                    "styleUrl": "./home.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "teamService",
+                        "type": "TeamService"
+                    }
+                ],
+                "line": 11,
+                "jsdoctags": [
+                    {
+                        "name": "teamService",
+                        "type": "TeamService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"home\">\n  <h1>Brasileirão 2020</h1>\n  <div class=\"home-teams\">\n    <div *ngFor=\"let teamVenue of teamVenues\">\n      <a class=\"team-link\" routerLink=\"/team-details\" [state]=\"{ data: teamVenue}\">\n        <div>\n          <app-team [teamVenue]=\"teamVenue\"></app-team>\n        </div>\n      </a>\n    </div>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-8f196770333aa216860a88c0b6b221aa",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "line": 64,
+                    "type": "unknown"
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 73,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 67,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 70,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nh2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\np {\n  margin: 1em 0;\n}\n\na {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nli {\n  margin-bottom: 8px;\n}\n\n.tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "TeamComponent",
+            "id": "component-TeamComponent-b53878253500d6d1ff9bd1fc86df5c47",
+            "file": "src/app/shared/components/team/team.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-team",
+            "styleUrls": [
+                "./team.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./team.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "showContent",
+                    "defaultValue": "false",
+                    "line": 13,
+                    "type": "boolean"
+                },
+                {
+                    "name": "teamVenue",
+                    "line": 12,
+                    "type": "TeamVenueInterface"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit, Output } from '@angular/core';\nimport { EventEmitter } from '@angular/core';\nimport { TeamVenueInterface } from '../../models/team.interface';\n\n@Component({\n  selector: 'app-team',\n  templateUrl: './team.component.html',\n  styleUrls: ['./team.component.css']\n})\nexport class TeamComponent implements OnInit {\n  @Input() teamVenue: TeamVenueInterface;\n  @Input() showContent: boolean = false;\n\n  constructor() { }\n\n  ngOnInit(): void {\n    console.log('team', this.teamVenue);\n\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".team-card{\r\n  margin: 25px 10px;\r\n  width: 300px;\r\n}\r\n.team-card-details{\r\n  width: fit-content;\r\n}\r\n.header-image{\r\n  background-size: cover !important;\r\n}\r\n.team-venue-image {\r\n  max-height: 500px;\r\n}\r\n",
+                    "styleUrl": "./team.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ng-template [ngIf]=\"teamVenue\" [ngIfElse]=\"fail\">\n  <mat-card class=\"team-card\" [ngClass]=\"{'team-card-details': showContent}\">\n    <mat-card-header>\n      <div mat-card-avatar class=\"header-image\" [style.background]=\"'url(' + teamVenue.team.logo + ')'\"></div>\n      <mat-card-title>{{teamVenue.team.name}}</mat-card-title>\n      <mat-card-subtitle>{{teamVenue.venue.city}}</mat-card-subtitle>\n    </mat-card-header>\n    <mat-card-content *ngIf=\"showContent\">\n      <div class=\"team-venue\">\n        <img [src]=\"teamVenue.venue.image\" alt=\"imagem do estadio\" class=\"team-venue-image\">\n        <p><span>{{teamVenue.venue.name}} </span></p>\n        <p><span>Cidade: </span>{{teamVenue.venue.city}}</p>\n        <p><span>Endereço: </span>{{teamVenue.venue.address}}</p>\n        <p><span>Capacidade: </span>{{teamVenue.venue.capacity}}</p>\n      </div>\n    </mat-card-content>\n  </mat-card>\n</ng-template>\n\n<ng-template #fail>\n  <mat-card class=\"team-card\" >\n    <mat-card-header>\n      <div mat-card-avatar class=\"header-image\" [style.background]=\"'url(./../assets/images/no-image.png)'\"></div>\n      <mat-card-title>Falha ao carregar</mat-card-title>\n    </mat-card-header>\n  </mat-card>\n</ng-template>\n"
+        },
+        {
+            "name": "TeamDetailsComponent",
+            "id": "component-TeamDetailsComponent-040d45bc7836b2e6250c4ed625fa874a",
+            "file": "src/app/pages/team-details/team-details.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-team-details",
+            "styleUrls": [
+                "./team-details.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./team-details.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "teamRoster",
+                    "type": "Array<PlayerInterface>",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "teamStandings",
+                    "type": "StandingsInterface",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "teamVenue",
+                    "type": "TeamVenueInterface",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 20
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { TeamRosterInterface } from './../../shared/models/team-roster.interface';\nimport { TeamService } from '../../shared/services/team.service';\nimport { StandingsInterface, StanginsResponseInterface } from '../../shared/models/standings.interface';\nimport { TeamVenueInterface } from '../../shared/models/team.interface';\nimport { Component, Input, OnInit } from '@angular/core';\nimport { PlayerInterface } from 'src/app/shared/models/player.interface';\n\n@Component({\n  selector: 'app-team-details',\n  templateUrl: './team-details.component.html',\n  styleUrls: ['./team-details.component.css']\n})\nexport class TeamDetailsComponent implements OnInit {\n  public teamVenue: TeamVenueInterface;\n  public teamStandings: StandingsInterface;\n  public teamRoster: Array<PlayerInterface>;\n\n  constructor(private teamService: TeamService) { }\n\n  ngOnInit(): void {\n    this.teamVenue = history.state.data\n\n    this.teamService.getTeamStandings(this.teamVenue.team.id).subscribe((success: StanginsResponseInterface) => {\n      this.teamStandings = success.response[0].league.standings[0][0];\n    }, error => {\n      console.log(error);\n    });\n\n    this.teamService.getTeamRoster(this.teamVenue.team.id).subscribe((success: TeamRosterInterface) => {\n      this.teamRoster = success.response\n    }, error => {\n      console.log(error);\n    })\n\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".team-details{\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: flex-start;\r\n\r\n  align-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.team-content{\r\n  display: flex;\r\n\r\n}\r\n\r\n.team-standings{\r\n  background-color: #fff;\r\n  border-radius: 5px;\r\n  display: flex;\r\n  padding: 30px 50px;\r\n  justify-content: space-between;\r\n}\r\n\r\n.team-roster{\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n}\r\n\r\n.right-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n",
+                    "styleUrl": "./team-details.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "teamService",
+                        "type": "TeamService"
+                    }
+                ],
+                "line": 16,
+                "jsdoctags": [
+                    {
+                        "name": "teamService",
+                        "type": "TeamService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"team-details\">\n  <div class=\"team-content\" *ngIf=\"teamVenue\">\n    <app-team [teamVenue]=\"teamVenue\" [showContent]=\"true\"></app-team>\n  </div>\n  <div class=\"right-content\">\n    <div class=\"team-standings\" *ngIf=\"teamStandings\">\n      <app-team-standings [teamStandings]=\"teamStandings\"></app-team-standings>\n    </div>\n    <div class=\"team-roster\">\n      <div *ngFor=\"let player of teamRoster\">\n        <app-team-roster [player]=\"player\"></app-team-roster>\n      </div>\n    </div>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "TeamRosterComponent",
+            "id": "component-TeamRosterComponent-eff19d9ca06348f9a4af0ff3a00d11a3",
+            "file": "src/app/pages/team-details/components/team-roster/team-roster.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-team-roster",
+            "styleUrls": [
+                "./team-roster.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./team-roster.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "player",
+                    "line": 10,
+                    "type": "PlayerInterface"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { PlayerInterface } from './../../../../shared/models/player.interface';\n\n@Component({\n  selector: 'app-team-roster',\n  templateUrl: './team-roster.component.html',\n  styleUrls: ['./team-roster.component.css']\n})\nexport class TeamRosterComponent implements OnInit {\n  @Input() player: PlayerInterface;\n\n  constructor() { }\n\n  ngOnInit(): void { }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".team-roster{\r\n  margin: 5px;\r\n  width: 200px;\r\n}\r\n.player-details{\r\n  width: fit-content;\r\n}\r\n.header-image{\r\n  background-size: cover !important;\r\n}\r\n\r\nmat-card{\r\n  max-height: 40px !important;\r\n}\r\n",
+                    "styleUrl": "./team-roster.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 10
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"team-roster\">\n  <mat-card>\n    <mat-card-header>\n      <div mat-card-avatar class=\"header-image\" [style.background]=\"'url(' + player.player.photo + ')'\"></div>\n      <mat-card-title>{{player.player.firstname}}</mat-card-title>\n      <mat-card-subtitle>\n        <mat-icon *ngIf=\"player.player.injured\">healing</mat-icon>\n      </mat-card-subtitle>\n    </mat-card-header>\n    <mat-card-content>\n    </mat-card-content>\n  </mat-card>\n</div>"
+        },
+        {
+            "name": "TeamStandingsComponent",
+            "id": "component-TeamStandingsComponent-7e6d3571ad8aa23f60da6dc50c36af85",
+            "file": "src/app/pages/team-details/components/team-standings/team-standings.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-team-standings",
+            "styleUrls": [
+                "./team-standings.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./team-standings.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "teamStandings",
+                    "line": 10,
+                    "type": "StandingsInterface"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { StandingsInterface } from 'src/app/shared/models/standings.interface';\n\n@Component({\n  selector: 'app-team-standings',\n  templateUrl: './team-standings.component.html',\n  styleUrls: ['./team-standings.component.css']\n})\nexport class TeamStandingsComponent implements OnInit {\n  @Input() teamStandings: StandingsInterface;\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "\r\n.last-five-games{\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.success {\r\n  color: green;\r\n}\r\n\r\n.fail {\r\n  color: red;\r\n}\r\n\r\n.neutral {\r\n  color: gray;\r\n}\r\n\r\n.league-standings, .games-standings {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.wrapper{\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: 350px;\r\n}\r\n",
+                    "styleUrl": "./team-standings.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 10
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"wrapper\">\n  <div class=\"league-standings\">\n    <h1>Brasileirão 2020</h1>\n    <p><span>Qualificação:</span> {{ teamStandings.rank }}</p>\n    <p><span>Pontos:</span> {{ teamStandings.points }}</p>\n    <p><span>Saldo de gols:</span> {{ teamStandings.goalsDiff }}</p>\n    <span>Ultimos 5 jogos:</span>\n    <div class=\"last-five-games\">\n      <div *ngFor=\"let result of teamStandings.form.split('')\">\n        <mat-icon\n          *ngIf=\"result == 'W'\"\n          class=\"success\"\n          aria-hidden=\"false\"\n          aria-label=\"sentiment-satisfied\"\n          >sentiment_satisfied</mat-icon\n        >\n        <mat-icon\n          *ngIf=\"result == 'L'\"\n          class=\"fail\"\n          aria-hidden=\"false\"\n          aria-label=\"sentiment-dissatisfied\"\n          >sentiment_dissatisfied</mat-icon\n        >\n        <mat-icon\n          *ngIf=\"result == 'D'\"\n          class=\"neutral\"\n          aria-hidden=\"false\"\n          aria-label=\"sentiment-neutral\"\n          >sentiment_neutral</mat-icon\n        >\n      </div>\n    </div>\n  </div>\n  <div class=\"games-standings\">\n    <h1>Jogos</h1>\n    <p><span>Total:</span> {{ teamStandings.all.played }}</p>\n    <p><span>Ganhou:</span> {{ teamStandings.all.win }}</p>\n    <p><span>Empatou:</span> {{ teamStandings.all.draw }}</p>\n    <p><span>Perdeu:</span> {{ teamStandings.all.lose }}</p>\n    <p><span>Gols feitos:</span> {{ teamStandings.all.goals.for }}</p>\n    <p><span>Gols sofridos:</span> {{ teamStandings.all.goals.against }}</p>\n  </div>\n</div>\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "HomeModule"
+                        },
+                        {
+                            "name": "TeamDetailsModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "HomeModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": [
+                        {
+                            "name": "TeamService"
+                        }
+                    ]
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "HomeComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "TeamModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TeamDetailsModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TeamDetailsComponent"
+                        },
+                        {
+                            "name": "TeamRosterComponent"
+                        },
+                        {
+                            "name": "TeamStandingsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "TeamModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TeamModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TeamComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "TeamComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/home/home.stories.ts",
+                "type": "Story<HomeComponent>",
+                "defaultValue": "(args: HomeComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/components/team/team.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "FewItems",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/home/home.stories.ts",
+                "type": "Story<HomeComponent>",
+                "defaultValue": "(args: HomeComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Injured",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/team-details/components/team-roster/team-roster.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "NoContent",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/components/team/team.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "OneItem",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/home/home.stories.ts",
+                "type": "Story<HomeComponent>",
+                "defaultValue": "(args: HomeComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Simple",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/team-details/components/team-standings/tem-standings.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Simple",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/team-details/components/team-roster/team-roster.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/components/team/team.stories.ts",
+                "type": "Story<TeamComponent>",
+                "defaultValue": "(args: TeamComponent) => ({\r\n  props:args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/team-details/components/team-standings/tem-standings.stories.ts",
+                "type": "Story<TeamStandingsComponent>",
+                "defaultValue": "(args: TeamStandingsComponent) => ({\r\n    props: args\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/team-details/components/team-roster/team-roster.stories.ts",
+                "type": "Story<TeamRosterComponent>",
+                "defaultValue": "(args: TeamRosterComponent) => ({\r\n    props: args\r\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "type": "literal type"
+                }
+            ],
+            "src/app/pages/home/home.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/home/home.stories.ts",
+                    "type": "Story<HomeComponent>",
+                    "defaultValue": "(args: HomeComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "FewItems",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/home/home.stories.ts",
+                    "type": "Story<HomeComponent>",
+                    "defaultValue": "(args: HomeComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "OneItem",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/home/home.stories.ts",
+                    "type": "Story<HomeComponent>",
+                    "defaultValue": "(args: HomeComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "src/app/shared/components/team/team.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/shared/components/team/team.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "NoContent",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/shared/components/team/team.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/shared/components/team/team.stories.ts",
+                    "type": "Story<TeamComponent>",
+                    "defaultValue": "(args: TeamComponent) => ({\r\n  props:args,\r\n})"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/app/pages/team-details/components/team-roster/team-roster.stories.ts": [
+                {
+                    "name": "Injured",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/team-details/components/team-roster/team-roster.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Simple",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/team-details/components/team-roster/team-roster.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/team-details/components/team-roster/team-roster.stories.ts",
+                    "type": "Story<TeamRosterComponent>",
+                    "defaultValue": "(args: TeamRosterComponent) => ({\r\n    props: args\r\n})"
+                }
+            ],
+            "src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/pages/team-details/components/team-standings/tem-standings.stories.ts": [
+                {
+                    "name": "Simple",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/team-details/components/team-standings/tem-standings.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/team-details/components/team-standings/tem-standings.stories.ts",
+                    "type": "Story<TeamStandingsComponent>",
+                    "defaultValue": "(args: TeamStandingsComponent) => ({\r\n    props: args\r\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app.routing-module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "",
+                        "component": "HomeComponent"
+                    },
+                    {
+                        "path": "team-details",
+                        "component": "TeamDetailsComponent"
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 1,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "e2e/src/app.po.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "AppPage",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home/home.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HomeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home/home.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home/home.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FewItems",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home/home.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "OneItem",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/team-details/components/team-roster/team-roster.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TeamRosterComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/team-details/components/team-roster/team-roster.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Injured",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/team-details/components/team-roster/team-roster.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Simple",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/team-details/components/team-roster/team-roster.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/team-details/components/team-standings/team-standings.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TeamStandingsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/team-details/components/team-standings/tem-standings.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Simple",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/team-details/components/team-standings/tem-standings.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/team-details/team-details.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TeamDetailsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/header/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/team/team.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TeamComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/team/team.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/team/team.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "NoContent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/team/team.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/player.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "PlayerInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/standings.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "StandingResultsInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/standings.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "StandingsInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/standings.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "StandingsLeagueInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/standings.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "StanginsResponseInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/team-roster.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TeamRosterInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/team.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TeamInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/team.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TeamResponseInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/team.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TeamVenueInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/models/team.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "VenueInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/services/team.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "TeamService",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

@@ -1,9 +1,10 @@
+import { TeamRosterInterface } from './../models/team-roster.interface';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Observable } from 'rxjs';
 
 import { TeamResponseInterface } from './../models/team.interface';
-import { StandingsInterface } from '../models/standings.interface';
+import { StanginsResponseInterface } from '../models/standings.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -26,8 +27,13 @@ export class TeamService {
     return this.httpClient.get(url, this.httpOptions) as Observable<TeamResponseInterface>;
   }
 
-  public getTeamStandings(teamId: number): Observable<StandingsInterface>{
+  public getTeamStandings(teamId: number): Observable<StanginsResponseInterface>{
     const url = `https://api-football-v1.p.rapidapi.com/v3/standings?season=2020&league=71&team=${teamId}`
-    return this.httpClient.get(url, this.httpOptions) as Observable<StandingsInterface>;
+    return this.httpClient.get(url, this.httpOptions) as Observable<StanginsResponseInterface>;
+  }
+
+  public getTeamRoster(teamId: number): Observable<TeamRosterInterface>{
+    const url = `https://api-football-v1.p.rapidapi.com/v3/players?season=2020&league=71&team=${teamId}`
+    return this.httpClient.get(url, this.httpOptions) as Observable<TeamRosterInterface>;
   }
 }

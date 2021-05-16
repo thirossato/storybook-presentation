@@ -15,7 +15,7 @@ export class TeamComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('show content', this.showContent);
+    console.log('team', this.teamVenue);
 
   }
 

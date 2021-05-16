@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { TeamModule } from './../../shared/components/team/team.module';
 import { TeamService } from './../../shared/services/team.service';
 import { HomeComponent } from './home.component';
@@ -11,7 +12,8 @@ import { MatCardModule } from '@angular/material/card'
   imports: [
     CommonModule,
     MatCardModule,
-    TeamModule
+    TeamModule,
+    RouterModule
   ],
   providers:[TeamService]
 })

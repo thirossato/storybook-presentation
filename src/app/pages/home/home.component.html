@@ -2,7 +2,11 @@
   <h1>Brasileirão 2020</h1>
   <div class="home-teams">
     <div *ngFor="let teamVenue of teamVenues">
-      <app-team [teamVenue]="teamVenue" (teamClicked)="showTeamDetails(teamVenue)"></app-team>
+      <a class="team-link" routerLink="/team-details" [state]="{ data: teamVenue}">
+        <div>
+          <app-team [teamVenue]="teamVenue"></app-team>
+        </div>
+      </a>
     </div>
   </div>
 </div>

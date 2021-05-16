@@ -1,3 +1,11 @@
+export interface StanginsResponseInterface{
+  response: Array<StandingsLeagueInterface>;
+}
+
+export interface StandingsLeagueInterface{
+  league: { standings: StandingsInterface }
+}
+
 export interface StandingsInterface{
   rank: number;
   points:number;
